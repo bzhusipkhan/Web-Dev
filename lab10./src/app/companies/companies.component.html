@@ -1,0 +1,6 @@
+<p>Companies</p>
+<ul>
+    <li *ngFor="let company of companies">
+        <p>(id: {{company.id}}), (name: <a [routerLink]="[company.id]"> {{company.name}}></a>), (description: {{company.description}})</p>
+    </li>
+</ul>
